@@ -1,9 +1,7 @@
 {% extends 'base.html' %}
-<!-- navigation -->
 {% load static %}
-<!-- /navigation -->
-{% block asosiy %}
-<!-- /navigation -->
+{% block content %}
+
 
 <section class="section-sm border-bottom">
 	<div class="container">
@@ -22,7 +20,7 @@
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-4 mb-4 mb-md-0 text-center text-md-left">
-				<img loading="lazy" class="rounded-lg img-fluid" src="images/author.jpg">
+				<img loading="lazy" class="rounded-lg img-fluid" src="{% static 'images/author.jpg' %}">
 			</div>
 			<div class="col-lg-9 col-md-8 content text-center text-md-left">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet vulputate augue. Duis auctor lacus id vehicula gravida. Nam suscipit vitae purus et laoreet. Donec nisi dolor, consequat vel pretium id, auctor in dui. Nam iaculis, neque ac ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet vulputate augue. Duis auctor lacus id vehicula gravida. Nam suscipit vitae purus et laoreet.</p>
@@ -43,14 +41,14 @@
 			<div class="col-lg-4 col-sm-6 mb-4">
 				<article class="mb-5">
 					<div class="post-slider slider-sm">
-						<img loading="lazy" src="images/post/post-6.jpg" class="img-fluid" alt="post-thumb">
-						<img loading="lazy" src="images/post/post-1.jpg" class="img-fluid" alt="post-thumb">
-						<img loading="lazy" src="images/post/post-3.jpg" class="img-fluid" alt="post-thumb">
+						<img loading="lazy" src="{% static 'images/post/post-6.jpg' %}" class="img-fluid" alt="post-thumb">
+						<img loading="lazy" src="{% static 'images/post/post-1.jpg' %}" class="img-fluid" alt="post-thumb">
+						<img loading="lazy" src="{% static 'images/post/post-3.jpg' %}" class="img-fluid" alt="post-thumb">
 					</div>
-					<h3 class="h5"><a class="post-title" href="post-elements.html">Elements That You Can Use To Create A New Post
+					<h3 class="h5"><a class="post-title" href="/postelements/">Elements That You Can Use To Create A New Post
 							On This Template.</a></h3>
 					<ul class="list-inline post-meta mb-2">
-						<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John
+						<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="/author/">John
 								Doe</a>
 						</li>
 						<li class="list-inline-item">Date : March 15, 2020</li>
@@ -65,12 +63,12 @@
 			<div class="col-lg-4 col-sm-6 mb-4">
 				<article class="mb-5">
 					<div class="post-slider slider-sm">
-						<img loading="lazy" src="images/post/post-1.jpg" class="img-fluid" alt="post-thumb">
+						<img loading="lazy" src="{% static 'images/post/post-1.jpg' %}" class="img-fluid" alt="post-thumb">
 					</div>
-					<h3 class="h5"><a class="post-title" href="post-details-1.html">Cheerful Loving Couple Bakers Drinking
+					<h3 class="h5"><a class="post-title" href="/postdetails1/">Cheerful Loving Couple Bakers Drinking
 							Coffee</a></h3>
 					<ul class="list-inline post-meta mb-2">
-						<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John
+						<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="/author/">John
 								Doe</a>
 						</li>
 						<li class="list-inline-item">Date : March 14, 2020</li>
@@ -85,8 +83,8 @@
 			<div class="col-lg-4 col-sm-6 mb-4">
 				<article class="mb-5">
 					<div class="post-slider slider-sm">
-						<img loading="lazy" src="images/post/post-2.jpg" class="img-fluid" alt="post-thumb">
-						<img loading="lazy" src="images/post/post-4.jpg" class="img-fluid" alt="post-thumb">
+						<img loading="lazy" src="{% static 'images/post/post-2.jpg' %}" class="img-fluid" alt="post-thumb">
+						<img loading="lazy" src="{% static 'images/post/post-4.jpg' %}" class="img-fluid" alt="post-thumb">
 					</div>
 					<h3 class="h5"><a class="post-title" href="post-details-2.html">Cheerful Loving Couple Bakers Drinking
 							Coffee</a></h3>
@@ -106,12 +104,12 @@
 			<div class="col-lg-4 col-sm-6 mb-4">
 				<article class="mb-5">
 					<div class="post-slider slider-sm">
-						<img loading="lazy" src="images/post/post-3.jpg" class="img-fluid" alt="post-thumb">
+						<img loading="lazy" src="{% static 'images/post/post-3.jpg' %}" class="img-fluid" alt="post-thumb">
 					</div>
 					<h3 class="h5"><a class="post-title" href="post-details-2.html">Cheerful Loving Couple Bakers Drinking
 							Coffee</a></h3>
 					<ul class="list-inline post-meta mb-2">
-						<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John
+						<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="/author/">John
 								Doe</a>
 						</li>
 						<li class="list-inline-item">Date : March 14, 2020</li>
@@ -126,13 +124,13 @@
 			<div class="col-lg-4 col-sm-6 mb-4">
 				<article class="mb-5">
 					<div class="post-slider slider-sm">
-						<img loading="lazy" src="images/post/post-4.jpg" class="img-fluid" alt="post-thumb">
-						<img loading="lazy" src="images/post/post-1.jpg" class="img-fluid" alt="post-thumb">
+						<img loading="lazy" src="{% static 'images/post/post-4.jpg' %}" class="img-fluid" alt="post-thumb">
+						<img loading="lazy" src="{% static 'images/post/post-1.jpg' %}" class="img-fluid" alt="post-thumb">
 					</div>
-					<h3 class="h5"><a class="post-title" href="post-details-1.html">Cheerful Loving Couple Bakers Drinking
+					<h3 class="h5"><a class="post-title" href="/postdetails1/">Cheerful Loving Couple Bakers Drinking
 							Coffee</a></h3>
 					<ul class="list-inline post-meta mb-2">
-						<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John
+						<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="/author/">John
 								Doe</a>
 						</li>
 						<li class="list-inline-item">Date : March 14, 2020</li>
@@ -147,12 +145,12 @@
 			<div class="col-lg-4 col-sm-6 mb-4">
 				<article class="mb-5">
 					<div class="post-slider slider-sm">
-						<img loading="lazy" src="images/post/post-5.jpg" class="img-fluid" alt="post-thumb">
+						<img loading="lazy" src="{% static 'images/post/post-5.jpg' %}" class="img-fluid" alt="post-thumb">
 					</div>
-					<h3 class="h5"><a class="post-title" href="post-details-1.html">Cheerful Loving Couple Bakers Drinking
+					<h3 class="h5"><a class="post-title" href="/postdetails1/">Cheerful Loving Couple Bakers Drinking
 							Coffee</a></h3>
 					<ul class="list-inline post-meta mb-2">
-						<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John
+						<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="/author/">John
 								Doe</a>
 						</li>
 						<li class="list-inline-item">Date : March 14, 2020</li>
@@ -166,10 +164,10 @@
 			</div>
 			<div class="col-lg-4 col-sm-6 mb-4">
 				<article class="mb-5">
-					<h3 class="h5"><a class="post-title" href="post-details-2.html">Cheerful Loving Couple Bakers Drinking
+					<h3 class="h5"><a class="post-title" href="/postdetails2/">Cheerful Loving Couple Bakers Drinking
 							Coffee</a></h3>
 					<ul class="list-inline post-meta mb-2">
-						<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="author.html">John
+						<li class="list-inline-item"><i class="ti-user mr-2"></i><a href="/author/">John
 								Doe</a>
 						</li>
 						<li class="list-inline-item">Date : March 14, 2020</li>
@@ -185,6 +183,6 @@
 	</div>
 </section>
 
-{% endblock asosiy %}
+{% endblock content %}
 
 

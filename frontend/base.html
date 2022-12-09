@@ -46,7 +46,7 @@
         <div class="container">
      
            <nav class="navbar navbar-expand-lg navbar-white">
-              <a class="navbar-brand" href="index.html">
+              <a class="navbar-brand" href="">
                  <img class="img-fluid" width="150px" src="{% static 'images/logo.png' %}" alt="LogBook">
               </a>
               <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
@@ -61,13 +61,13 @@
                           homepage <i class="ti-angle-down ml-1"></i>
                        </a>
                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="index-full.html">Homepage Full Width</a>
-                          <a class="dropdown-item" href="index-full-left.html">Homepage Full With Left Sidebar</a>
-                          <a class="dropdown-item" href="index-full-right.html">Homepage Full With Right Sidebar</a>
-                          <a class="dropdown-item" href="index-list.html">Homepage List Style</a>
-                          <a class="dropdown-item" href="index-list-left.html">Homepage List With Left Sidebar</a>
-                          <a class="dropdown-item" href="index-list-right.html">Homepage List With Right Sidebar</a>
-                       </div>
+                          <a class="dropdown-item" href="/indexfull/">Homepage Full Width</a>
+                          <a class="dropdown-item" href="/indexfullleft/">Homepage Full With Left Sidebar</a>
+                          <a class="dropdown-item" href="/indexfullright/">Homepage Full With Right Sidebar</a>
+                          <a class="dropdown-item" href="/indexlist/">Homepage List Style</a>
+                          <a class="dropdown-item" href="/indexlistleft/">Homepage List With Left Sidebar</a>
+                          <a class="dropdown-item" href="/indexlistright/">Homepage List With Right Sidebar</a>
+                       </
                     </li>
                     <li class="nav-item">
                        <a class="nav-link" href="/about/">About</a>
@@ -80,12 +80,12 @@
                           aria-expanded="false">Pages <i class="ti-angle-down ml-1"></i>
                        </a>
                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="author.html">Author</a>
-                          <a class="dropdown-item" href="post-details-1.html">Post Details 1</a>
-                          <a class="dropdown-item" href="post-details-2.html">Post Details 2</a>
-                          <a class="dropdown-item" href="post-elements.html">Post Elements</a>
-                          <a class="dropdown-item" href="privacy-policy.html">Privacy Policy</a>
-                          <a class="dropdown-item" href="terms-conditions.html">Terms Conditions</a>
+                          <a class="dropdown-item" href="/author/">Author</a>
+                          <a class="dropdown-item" href="/postdetails1/">Post Details 1</a>
+                          <a class="dropdown-item" href="/postdetails2/">Post Details 2</a>
+                          <a class="dropdown-item" href="/postelements/">Post Elements</a>
+                          <a class="dropdown-item" href="/privacypolicy/">Privacy Policy</a>
+                          <a class="dropdown-item" href="/termsconditions/">Terms Conditions</a>
                        </div>
                     </li>
                  </ul>
@@ -112,13 +112,13 @@
      </header>
 
      
-     {% block asosiy %}
-     {% endblock asosiy %}
+     {% block content %}
+     {% endblock content %}
      <footer class="section-sm pb-0 border-top border-default">
         <div class="container">
            <div class="row justify-content-between">
               <div class="col-md-3 mb-4">
-                 <a class="mb-4 d-block" href="index.html">
+                 <a class="mb-4 d-block" href="">
                     <img class="img-fluid" width="150px" src="{% static 'images/logo.png' %}" alt="LogBook">
                  </a>
                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
