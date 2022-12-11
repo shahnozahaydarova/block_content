@@ -12,5 +12,9 @@ class AuthorView(TemplateView):
 
 class ContactView(TemplateView):
     template_name = 'contact.html'
+
 class IndexFullLeft(TemplateView):
     template_name = 'index-full-left.html'
+
+class IndexFullRight(TemplateView):
+    template_name = 'index-full-right.html'
