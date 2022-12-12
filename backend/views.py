@@ -24,3 +24,11 @@ class IndexFullView(TemplateView):
 
 class IndexListLeftView(TemplateView):
     template_name = 'index-list-left.html'
+
+class IndexListRightView(TemplateView):
+    template_name = 'index-list-right.html'
+
+class IndexListView(TemplateView):
+    template_name = 'index-list.html'
+
+

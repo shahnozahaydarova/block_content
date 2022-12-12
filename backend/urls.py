@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import HomeView,AboutView,AuthorView,ContactView,IndexFullLeftView,IndexFullRightView,IndexFullView,IndexListLeftView
+from .views import *
 urlpatterns = [
     path('',HomeView.as_view()),
     path('about/',AboutView.as_view()),
@@ -8,5 +8,7 @@ urlpatterns = [
     path('indexfullleft/',IndexFullLeftView.as_view()),
     path('indexfullright/',IndexFullRightView.as_view()),
     path('indexfull/',IndexFullView.as_view()),
-    path('indexlistleft/',IndexListLeftView.as_view())
+    path('indexlistleft/',IndexListLeftView.as_view()),
+    path('indexlistright/',IndexListRightView.as_view()),
+    path('indexlist/',IndexListView.as_view())
 ]
