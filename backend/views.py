@@ -39,3 +39,9 @@ class PostDetails2View(TemplateView):
 
 class PostElementsView(TemplateView):
     template_name = 'post-elements.html'
+
+class PrivacyPolicyView(TemplateView):
+    template_name = 'privacy-policy.html'
+
+class TermsConditionsView(TemplateView):
+    template_name = 'terms-conditions.html'

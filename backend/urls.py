@@ -13,5 +13,7 @@ urlpatterns = [
     path('indexlist/',IndexListView.as_view()),
     path('postdetails1/',PostDetails1View.as_view()),
     path('postdetails2/',PostDetails2View.as_view()),
-    path('postelements/',PostElementsView.as_view())
+    path('postelements/',PostElementsView.as_view()),
+    path('privacypolicy/',PrivacyPolicyView.as_view()),
+    path('termsconditions/',TermsConditionsView.as_view())
 ]
