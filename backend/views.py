@@ -31,4 +31,11 @@ class IndexListRightView(TemplateView):
 class IndexListView(TemplateView):
     template_name = 'index-list.html'
 
+class PostDetails1View(TemplateView):
+    template_name = 'post-details-1.html'
 
+class PostDetails2View(TemplateView):
+    template_name = 'post-details-2.html'
+
+class PostElementsView(TemplateView):
+    template_name = 'post-elements.html'

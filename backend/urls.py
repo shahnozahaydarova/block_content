@@ -10,5 +10,8 @@ urlpatterns = [
     path('indexfull/',IndexFullView.as_view()),
     path('indexlistleft/',IndexListLeftView.as_view()),
     path('indexlistright/',IndexListRightView.as_view()),
-    path('indexlist/',IndexListView.as_view())
+    path('indexlist/',IndexListView.as_view()),
+    path('postdetails1/',PostDetails1View.as_view()),
+    path('postdetails2/',PostDetails2View.as_view()),
+    path('postelements/',PostElementsView.as_view())
 ]
