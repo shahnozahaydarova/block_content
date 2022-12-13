@@ -42,127 +42,12 @@
    
     
     
-    <header class="sticky-top bg-white border-bottom border-default">
-        <div class="container">
-     
-           <nav class="navbar navbar-expand-lg navbar-white">
-              <a class="navbar-brand" href="">
-                 <img class="img-fluid" width="150px" src="{% static 'images/logo.png' %}" alt="LogBook">
-              </a>
-              <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
-                 <i class="ti-menu"></i>
-              </button>
-     
-              <div class="collapse navbar-collapse text-center" id="navigation">
-                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
-                       <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                          aria-expanded="false">
-                          homepage <i class="ti-angle-down ml-1"></i>
-                       </a>
-                       <div class="dropdown-menu">
-                          <a class="dropdown-item" href="/indexfull/">Homepage Full Width</a>
-                          <a class="dropdown-item" href="/indexfullleft/">Homepage Full With Left Sidebar</a>
-                          <a class="dropdown-item" href="/indexfullright/">Homepage Full With Right Sidebar</a>
-                          <a class="dropdown-item" href="/indexlist/">Homepage List Style</a>
-                          <a class="dropdown-item" href="/indexlistleft/">Homepage List With Left Sidebar</a>
-                          <a class="dropdown-item" href="/indexlistright/">Homepage List With Right Sidebar</a>
-                       </
-                    </li>
-                    <li class="nav-item">
-                       <a class="nav-link" href="/about/">About</a>
-                    </li>
-                    <li class="nav-item">
-                       <a class="nav-link" href="/contact/">Contact</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                       <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                          aria-expanded="false">Pages <i class="ti-angle-down ml-1"></i>
-                       </a>
-                       <div class="dropdown-menu">
-                          <a class="dropdown-item" href="/author/">Author</a>
-                          <a class="dropdown-item" href="/postdetails1/">Post Details 1</a>
-                          <a class="dropdown-item" href="/postdetails2/">Post Details 2</a>
-                          <a class="dropdown-item" href="/postelements/">Post Elements</a>
-                          <a class="dropdown-item" href="/privacypolicy/">Privacy Policy</a>
-                          <a class="dropdown-item" href="/termsconditions/">Terms Conditions</a>
-                       </div>
-                    </li>
-                 </ul>
-                 
-                 <select class="m-2 border-0" id="select-language">
-                    <option id="en" value="about/" selected>En</option>
-                    <option id="fr" value="fr/about/">Fr</option>
-                 </select>
-     
-                 <!-- search -->
-                 <div class="search px-4">
-                    <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
-                    <div class="search-wrapper">
-                       <form action="javascript:void(0)" class="h-100">
-                          <input class="search-box pl-4" id="search-query" name="s" type="search" placeholder="Type &amp; Hit Enter...">
-                       </form>
-                       <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
-                    </div>
-                 </div>
-     
-              </div>
-           </nav>
-        </div>
-     </header>
+    
 
      
      {% block content %}
      {% endblock content %}
-     <footer class="section-sm pb-0 border-top border-default">
-        <div class="container">
-           <div class="row justify-content-between">
-              <div class="col-md-3 mb-4">
-                 <a class="mb-4 d-block" href="">
-                    <img class="img-fluid" width="150px" src="{% static 'images/logo.png' %}" alt="LogBook">
-                 </a>
-                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-              </div>
-  
-              <div class="col-lg-2 col-md-3 col-6 mb-4">
-                 <h6 class="mb-4">Quick Links</h6>
-                 <ul class="list-unstyled footer-list">
-                    <li><a href="/about/">About</a></li>
-                    <li><a href="/contact/">Contact</a></li>
-                    <li><a href="/privacy-policy/">Privacy Policy</a></li>
-                    <li><a href="/termsconditions/">Terms Conditions</a></li>
-                 </ul>
-              </div>
-  
-              <div class="col-lg-2 col-md-3 col-6 mb-4">
-                 <h6 class="mb-4">Social Links</h6>
-                 <ul class="list-unstyled footer-list">
-                    <li><a href="#">facebook</a></li>
-                    <li><a href="#">twitter</a></li>
-                    <li><a href="#">linkedin</a></li>
-                    <li><a href="#">github</a></li>
-                 </ul>
-              </div>
-  
-              <div class="col-md-3 mb-4">
-                 <h6 class="mb-4">Subscribe Newsletter</h6>
-                 <form class="subscription" action="javascript:void(0)" method="post">
-                    <div class="position-relative">
-                       <i class="ti-email email-icon"></i>
-                       <input type="email" class="form-control" placeholder="Your Email Address">
-                    </div>
-                    <button class="btn btn-primary btn-block rounded" type="submit">Subscribe now</button>
-                 </form>
-              </div>
-           </div>
-           <div class="scroll-top">
-              <a href="javascript:void(0);" id="scrollTop"><i class="ti-angle-up"></i></a>
-           </div>
-           <div class="text-center">
-              <p class="content">&copy; 2020 - Design &amp; Develop By <a href="https://themefisher.com/" target="_blank">Themefisher</a></p>
-           </div>
-        </div>
-     </footer>
+     
    <!-- JS Plugins -->
    <script src="{% static 'plugins/jQuery/jquery.min.js' %}"></script>
    <script src="{% static 'plugins/bootstrap/bootstrap.min.js' %}" async></script>
